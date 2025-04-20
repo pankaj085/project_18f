@@ -1,0 +1,198 @@
+/* Global Styles */
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --text: #2b2d42;
+    --text-light: #8d99ae;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --border: #e9ecef;
+    --text-medium: #374151; /* Medium gray (darker than light) */
+    --text-light: #6b7280;  /* Lighter gray (but still readable) */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Container - Made Larger */
+
+
+.card {
+    background: var(--card-bg);
+    padding: 50px 60px; /* Increased padding */
+    border-radius: 20px; /* Larger rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Increased max-width */
+    border: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin-bottom: 12px; /* Increased spacing */
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 32px; /* Significantly increased spacing */
+    font-size: 32px; /* Larger font size */
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+}
+
+.subtitle {
+    color: var(--text-light);
+    font-size: 16px; /* Slightly larger */
+    margin-bottom: 40px; /* Increased spacing */
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Input Group - Made Larger */
+.input-group {
+    display: flex;
+    gap: 15px; /* Increased gap */
+    margin-bottom: 40px; /* More space below */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 16px 20px; /* Larger padding */
+    border: 1px solid var(--border);
+    border-radius: 10px; /* More rounded */
+    font-size: 16px; /* Larger text */
+    transition: all 0.3s ease;
+    background-color: var(--bg);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+button {
+    padding: 0 25px; /* Wider button */
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px; /* More rounded */
+    font-size: 16px; /* Larger text */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 52px; /* Fixed height */
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result Box - Made Larger */
+.result-container {
+    border-radius: 12px; /* More rounded */
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+#result {
+    padding: 25px;
+    background-color: var(--bg);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    min-height: 150px;
+    color: var(--text-medium); /* Using the darker variable */
+    line-height: 1.7;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Add these styles to your existing style.css */
+
+.keyboard-shortcuts {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666;
+    padding: 0 2px;
+}
+
+.keyboard-shortcuts span {
+    display: flex;
+    align-items: center;
+}
+
+.keyboard-shortcuts strong {
+    display: inline-block;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1px 5px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.loading {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.content-separator {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.continuation-content {
+    margin-top: 15px;
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #e74c3c;
+    font-style: italic;
+}
