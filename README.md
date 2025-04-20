@@ -20,6 +20,7 @@ PROJECT_18F is a web-based AI-powered content generation tool that allows users 
 
 ## Project Structure
 
+```
 .
 ├── backend/
 │   ├── .env                # Environment variables for API keys and URLs
@@ -32,6 +33,7 @@ PROJECT_18F is a web-based AI-powered content generation tool that allows users 
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Git ignore rules
 └── README.md               # Project documentation
+```
 
 ## Project Setup
 
