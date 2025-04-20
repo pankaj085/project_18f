@@ -18,6 +18,21 @@ PROJECT_18F is a web-based AI-powered content generation tool that allows users 
 - A modern web browser
 - A Cohere API key (free tier available)
 
+## Project Structure
+
+.
+├── backend/
+│   ├── .env                # Environment variables for API keys and URLs
+│   ├── main.py             # FastAPI backend implementation
+│   └── __pycache__/        # Python cache files (ignored in .gitignore)
+├── frontend/
+│   ├── index.html          # Main HTML file for the frontend
+│   ├── script.js           # JavaScript logic for interacting with the backend
+│   └── style.css           # Styling for the frontend
+├── requirements.txt        # Python dependencies
+├── .gitignore              # Git ignore rules
+└── README.md               # Project documentation
+
 ## Project Setup
 
 ### 1. Clone the repository
