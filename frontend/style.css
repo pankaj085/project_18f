@@ -121,9 +121,11 @@ button:active {
 
 /* Result Box - Made Larger */
 .result-container {
-    border-radius: 12px; /* More rounded */
-    overflow: hidden;
-    border: 1px solid var(--border);
+    max-height: 300px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px; /* Optional: Add padding for better readability */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    background-color: #f9f9f9; /* Optional: Background color for better visibility */
 }
 
 #result {
@@ -195,4 +197,8 @@ button:active {
     margin-top: 15px;
     color: #e74c3c;
     font-style: italic;
+}
+
+.container {
+    overflow-y: auto; /* Allow vertical scrolling */
 }
