@@ -19,7 +19,7 @@ PROJECT_18F is a web-based AI-powered content generation tool that allows users 
 - A Cohere API key (free tier available)
 
 ## Project Structure
-> ***Note:*** Only for now, the structure may chnage in future during the project's development and requirements.
+> ***Note:*** Only for now, the structure may change in future during the project's development and requirements.
 ```
 .
 ├── backend/
