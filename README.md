@@ -19,6 +19,7 @@ PROJECT_18F is a web-based AI-powered content generation tool that allows users 
 - A Cohere API key (free tier available)
 
 ## Project Structure
+> ***Note:*** For now, the structure may chnage in future according to project development and requirements.
 
 ```
 .
@@ -69,9 +70,10 @@ mkdir -p backend frontend
 cd backend
 
 # Install the required dependencies
-pip install fastapi uvicorn python-dotenv requests
+pip install -r requirements.txt
 
-# Create an .env file
+# Create an .env file, inside backend
+touch .env
 echo "COHERE_API_KEY=your_cohere_api_key_here" > .env
 echo "COHERE_API_URL=https://api.cohere.ai/v1/generate" >> .env
 ```
@@ -81,6 +83,9 @@ Replace `your_cohere_api_key_here` with the API key you obtained from Cohere.
 ### 5. Create the backend files
 
 Create `main.py` in the backend directory with the FastAPI implementation.
+```bash
+touch main.py
+```
 
 ### 6. Frontend setup
 
@@ -120,9 +125,9 @@ You have two options:
 cd frontend
 
 # If you have Python installed
-python -m http.server 8080
+python -m http.server 5500
 ```
-Then open `http://localhost:8080` in your browser.
+Then open `http://localhost:5500` in your browser.
 
 ## Usage
 
